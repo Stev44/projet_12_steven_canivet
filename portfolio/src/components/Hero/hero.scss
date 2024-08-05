@@ -1,0 +1,70 @@
+@import '../../style/main.scss';
+
+.hero {
+  @include flex;
+  height: 100vh;
+  position: relative;
+  &_wrapper {
+    @include flex(column);
+    width: 100%;
+    .container {
+      @include flex(row, space-between);
+      width: 100%;
+      .wrapper {
+        width: 60%;
+        &_welcome {
+          font-size: 1.5rem;
+        }
+        &_title {
+          background: linear-gradient(120deg, $primary, $secondary);
+          font-size: 8rem;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        &_description {
+          font-size: 3rem;
+        }
+        &_button {
+          width: 22%;
+          border: 2px solid $primary;
+          background-color: transparent;
+          padding: 20px;
+          border-radius: 25px;
+          color: $text;
+          font-size: 1.2rem;
+          transition: 0.4s;
+          &:hover {
+            background: $primary;
+            color: black;
+            border: 2px solid $primary;
+          }
+        }
+      }
+      .profile {
+        &_img {
+          width: 500px;
+          height: 500px;
+          border-radius: 50%;
+          background-image: url('../../assets/profil.jpg');
+          background-size: cover;
+        }
+      }
+    }
+    .button {
+      @include flex;
+      width: 70px;
+      height: 70px;
+      bottom: 60px;
+      position: absolute;
+      border: 1px solid $text;
+      background-color: transparent;
+      border-radius: 50%;
+      &_arrow {
+        fill: $text;
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
