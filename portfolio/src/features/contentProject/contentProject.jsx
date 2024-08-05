@@ -9,7 +9,7 @@ import { ReactComponent as Css } from '../../assets/css.svg'
 
 import project from '../../assets/project.jpg'
 import test from '../../assets/argentBank.jpg'
-import portfolio from '../../assets/portfolio.webp'
+import portfolio from '../../assets/portfolio.jpg'
 import land from '../../assets/kasa.jpg'
 import landi from '../../assets/sophie.jpg'
 import landing from '../../assets/omf.jpg'
@@ -34,7 +34,7 @@ const content = [
     img: land,
     description:
       'Projet realisé avec dqjdiqdiqdiqdiqjdiqjdiqjdiqjdijdijs qdqdqidqid qdqjdiqjdqqidq qdq',
-    technologies: [ReactIcon, Sass ],
+    technologies: [ReactIcon, Sass],
   },
 
   {

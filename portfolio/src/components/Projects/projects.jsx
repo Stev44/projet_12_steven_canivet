@@ -11,7 +11,9 @@ const Projects = () => {
             <div className="card" key={index}>
               <h3>{item.title}</h3>
               <div className="card_img">
-                <img src={item.img} alt={item.title}></img>
+                <div className="img">
+                  <img src={item.img} alt={item.title} />
+                </div>
                 <div className="ntm">
                   <div className="card_img_technologies">
                     {item.technologies.map((TechIcon, idx) => (
