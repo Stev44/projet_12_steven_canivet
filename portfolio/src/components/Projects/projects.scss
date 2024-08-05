@@ -1,7 +1,7 @@
 @import '../../style/main.scss';
 
 .projects {
-  background-color: $tertiary;
+  background-color: var(--tertiary);
   min-height: 100vh;
   &_wrapper {
     @include flex(column);

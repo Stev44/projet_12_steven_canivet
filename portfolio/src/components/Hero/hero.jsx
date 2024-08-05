@@ -17,7 +17,7 @@ const Hero = () => {
   }
   return (
     <section className="hero" id="hero">
-      <ParticlesComponent id="particles" />
+      <ParticlesComponent />
       <div className="hero_wrapper margin">
         <div className="container">
           <div className="wrapper">

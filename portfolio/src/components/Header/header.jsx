@@ -2,18 +2,20 @@ import { Link } from 'react-router-dom'
 import './header.scss'
 import { useDispatch, useSelector } from 'react-redux'
 import { setToggle } from '../../store/reducers'
-import { ReactComponent as Moon } from '../../assets/moon.svg'
-import { ReactComponent as Light } from '../../assets/light.svg'
+import { ReactComponent as Paint } from '../../assets/paint.svg'
 import { ReactComponent as ArrowUp } from '../../assets/arrowUp.svg'
 import React, { useEffect, useState } from 'react'
 
 const Header = React.memo(() => {
   const dispatch = useDispatch()
-  const mode = useSelector((state) => state.switch.mode)
   const language = useSelector((state) => state.switch.language)
+  const modes = ['normal', 'green', 'purple', 'yellow', 'blue', 'multi']
+  const colorMode = useSelector((state) => state.switch.mode)
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
+    document.querySelector('body').setAttribute('data-theme', colorMode)
+
     const handleScroll = () => {
       const scrollVisible = 200
 
@@ -29,10 +31,21 @@ const Header = React.memo(() => {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, [colorMode])
 
   const scrollToHero = () => {
     document.getElementById('hero').scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const setMode = (mode) => {
+    document.querySelector('body').setAttribute('data-theme', mode)
+  }
+
+  const handleClick = () => {
+    const modeIndex = (modes.indexOf(colorMode) + 1) % modes.length
+    const newMode = modes[modeIndex]
+    dispatch(setToggle({ mode: newMode }))
+    setMode(newMode)
   }
 
   return (
@@ -62,25 +75,9 @@ const Header = React.memo(() => {
             </label>
             <p>EN</p>
           </div>
-          {!mode ? (
-            <button
-              className="nav_links_button"
-              onClick={() => {
-                dispatch(setToggle({ mode: true }))
-              }}
-            >
-              <Moon className="moon icon" />
-            </button>
-          ) : (
-            <button
-              className="nav_links_button"
-              onClick={() => {
-                dispatch(setToggle({ mode: false }))
-              }}
-            >
-              <Light className="sun icon" />
-            </button>
-          )}
+          <button className="nav_links_button" onClick={handleClick}>
+            <Paint className="paint icon" />
+          </button>
         </div>
         <button
           onClick={scrollToHero}

@@ -8,13 +8,13 @@
 .socials_icon > :first-child {
   width: 32px;
   height: 32px;
-  border: 1px solid $text;
+  border: 1px solid var(--text);
   border-radius: 50%;
   padding: 15px;
   transition: all 0.4s;
 }
 
 .socials_icon > :first-child:hover {
-  color: $secondary;
+  color: var(--secondary);
   background-color: white;
 }

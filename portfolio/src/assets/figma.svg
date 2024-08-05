@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="48px" height="48px"><path d="M8.537 24L8.537 24c-1.933 0-3.5-1.567-3.5-3.5l0 0c0-1.933 1.567-3.5 3.5-3.5h2.5c.552 0 1 .448 1 1v2.5C12.037 22.433 10.47 24 8.537 24zM16.5 8H14c-.552 0-1-.448-1-1V2c0-.552.448-1 1-1h2.5C18.433 1 20 2.567 20 4.5l0 0C20 6.433 18.433 8 16.5 8zM8.5 8H11c.552 0 1-.448 1-1V2c0-.552-.448-1-1-1H8.5C6.567 1 5 2.567 5 4.5l0 0C5 6.433 6.567 8 8.5 8zM8.5 16H11c.552 0 1-.448 1-1v-5c0-.552-.448-1-1-1H8.5C6.567 9 5 10.567 5 12.5l0 0C5 14.433 6.567 16 8.5 16zM16 9A3 3 0 1016 15 3 3 0 1016 9z"/></svg>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 16C16 13.7909 17.7909 12 20 12C22.2091 12 24 13.7909 24 16C24 18.2091 22.2091 20 20 20C17.7909 20 16 18.2091 16 16Z" fill="#1ABCFE"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 24C8 21.7909 9.79086 20 12 20H16V24C16 26.2091 14.2091 28 12 28C9.79086 28 8 26.2091 8 24Z" fill="#0ACF83"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 4V12H20C22.2091 12 24 10.2091 24 8C24 5.79086 22.2091 4 20 4H16Z" fill="#FF7262"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 8C8 10.2091 9.79086 12 12 12H16V4H12C9.79086 4 8 5.79086 8 8Z" fill="#F24E1E"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C8 18.2091 9.79086 20 12 20H16V12H12C9.79086 12 8 13.7909 8 16Z" fill="#A259FF"/>
+</svg>

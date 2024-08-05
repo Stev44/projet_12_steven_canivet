@@ -1,9 +1,11 @@
 import './about.scss'
 import tech from '../../features/tech/tech'
+import ParticlesComponent from '../Particles/particles'
 
 const About = () => {
   return (
     <section className="about padding" id="content">
+      <ParticlesComponent />
       <h2 className="about_title">ABOUT ME</h2>
       <div className="about_content">
         <div className="about_text">

@@ -16,7 +16,7 @@
           font-size: 1.5rem;
         }
         &_title {
-          background: linear-gradient(120deg, $primary, $secondary);
+          background: linear-gradient(120deg, var(--primary), var(--accent));
           font-size: 8rem;
           background-clip: text;
           -webkit-background-clip: text;
@@ -27,17 +27,17 @@
         }
         &_button {
           width: 22%;
-          border: 2px solid $primary;
+          border: 2px solid var(--primary);
           background-color: transparent;
           padding: 20px;
           border-radius: 25px;
-          color: $text;
+          color: var(--text);
           font-size: 1.2rem;
           transition: 0.4s;
           &:hover {
-            background: $primary;
+            background: var(--primary);
             color: black;
-            border: 2px solid $primary;
+            border: 2px solid var(--primary);
           }
         }
       }
@@ -57,11 +57,11 @@
       height: 70px;
       bottom: 60px;
       position: absolute;
-      border: 1px solid $text;
+      border: 1px solid var(--text);
       background-color: transparent;
       border-radius: 50%;
       &_arrow {
-        fill: $text;
+        fill: var(--text);
         width: 32px;
         height: 32px;
       }

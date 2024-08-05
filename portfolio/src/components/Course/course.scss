@@ -1,7 +1,7 @@
 @import '../../style/main.scss';
 
 .course {
-  background-color: $tertiary;
+  background-color: var(--tertiary);
   height: 100vh;
   &_container {
     @include flex(column);
@@ -20,14 +20,14 @@
         height: 100%;
 
         .infos {
-          border: 1px solid hsl(214, 68%, 31%, 20%);
+          border: 1px solid var(--tertiary);
           border-radius: 5px;
           padding: 35px;
           width: 80%;
           position: relative;
-          background-color: hsl(214, 68%, 31%, 20%);
+          background-color: var(--tertiary);
           h4 {
-            color: $accent;
+            color: var(--accent);
             padding-bottom: 10px;
           }
           .icon {

@@ -26,7 +26,7 @@
             width: 100%;
             height: 100%;
             border-radius: 5px;
-            border: 1px solid $text;
+            border: 1px solid var(--text);
             background-color: transparent;
           }
         }
@@ -38,7 +38,7 @@
           height: 100%;
           width: 100%;
           border-radius: 5px;
-          border: 1px solid $text;
+          border: 1px solid var(--text);
           background-color: transparent;
         }
       }
@@ -47,8 +47,8 @@
       height: 50px;
       width: 300px;
       border-radius: 5px;
-      background-color: $primary;
-      box-shadow: 3px 3px 15px $primary;
+      background-color: var(--primary);
+      box-shadow: 3px 3px 15px var(--primary);
     }
   }
 }

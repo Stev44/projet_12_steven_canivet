@@ -1,8 +1,55 @@
 //** https://www.realtimecolors.com/?colors=eceef2-0c121a-9ab7df-194785-3f8bef&fonts=Inter-Inter ***/
 
-$text: #edeff3;
-$background: #0b1018;
-$primary: #9ab7df;
-$secondary: #194885;
-$accent: #3e8bef;
-$tertiary: hsl(220, 19%, 94%, 5%);
+:root {
+  --text: #edeff3;
+  --background: #0b1018;
+  --primary: #9ab7df;
+  --secondary: #194885;
+  --accent: #3e8bef;
+  --tertiary: hsl(220, 19%, 94%, 5%);
+}
+
+[data-theme='green'] {
+  --text: #eaecea;
+  --background: #131710;
+  --primary: #9bd49f;
+  --secondary: #258b2e;
+  --accent: #28e237;
+  --tertiary: hsl(120, 5%, 92%, 5%);
+}
+
+[data-theme='purple'] {
+  --text: #e9e7ea;
+  --background: #120b13;
+  --primary: #c08cdc;
+  --secondary: #651490;
+  --accent: #ab11fd;
+  --tertiary: hsl(280, 7%, 91%, 5%);
+}
+
+[data-theme='yellow'] {
+  --text: #f1f1ee;
+  --background: #17170f;
+  --primary: #d4d3a9;
+  --secondary: #817f31;
+  --accent: #ccc849;
+  --tertiary: hsl(60, 10%, 94%, 5%);
+}
+
+[data-theme='blue'] {
+  --text: #eef0f0;
+  --background: #0f1917;
+  --primary: #97d5c8;
+  --secondary: #238a74;
+  --accent: #29e3bc;
+  --tertiary: hsl(180, 6%, 94%, 5%);
+}
+
+[data-theme='multi'] {
+  --text: #f6f0eb;
+  --background: #120d09;
+  --primary: #ff6600;
+  --secondary: #864d26;
+  --accent: #ce7134;
+  --tertiary: hsl(20, 29%, 94%, 5%);
+}
