@@ -3,21 +3,33 @@
 .course {
   background-color: var(--tertiary);
   height: 100vh;
+  @media (max-width: 575.98px) {
+    height: auto;
+  }
   &_container {
     @include flex(column);
     gap: 100px;
     margin: 0 auto;
-    .title {
-      text-align: center;
-    }
+    height: 100%;
     .wrapper {
       @include flex(row, space-between);
       width: 100%;
-      height: 600px;
+      height: 100%;
+      @media (max-width: 575.98px) {
+        @include flex(column);
+        gap: 50px;
+        height: auto;
+        padding: 0 20px 0 20px;
+      }
       &_course {
-        @include flex(column, space-between, space-between);
+        @include flex(column, space-evenly, flex-start);
         width: 50%;
         height: 100%;
+        @media (max-width: 575.98px) {
+          @include flex(column);
+          width: 100%;
+          gap: 40px;
+        }
 
         .infos {
           border: 1px solid var(--tertiary);
@@ -26,6 +38,9 @@
           width: 80%;
           position: relative;
           background-color: var(--tertiary);
+          @media (max-width: 575.98px) {
+            width: 100%;
+          }
           h4 {
             color: var(--primary);
             padding-bottom: 10px;
@@ -37,82 +52,61 @@
             position: absolute;
             top: -20px;
             left: -20px;
+            @media (max-width: 575.98px) {
+              width: 40px;
+              height: 40px;
+              top: 20%;
+              left: 80%;
+            }
           }
         }
       }
-      &_img {
+      .line {
+        height: 100%;
+        width: 1px;
+        background-color: var(--text);
+        @media (max-width: 575.98px) {
+          display: none;
+        }
+      }
+      .skills {
         @include flex(column);
         width: 50%;
         height: 100%;
-        position: relative;
-        .img {
-          overflow: hidden;
-          position: absolute;
-          img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            border-radius: 15px;
-          }
+        gap: 60px;
+        @media (max-width: 575.98px) {
+          width: 100%;
+          gap: 40px;
         }
-        .cv {
-          @include flex(column-reverse);
-          gap: 50px;
-          z-index: 10;
-          padding: 50px;
-          border-radius: 15px;
-          backdrop-filter: blur(7.5px);
-          -webkit-backdrop-filter: blur(7.5px);
-          background-color: rgba(50, 50, 50, 0.3);
-
-          &_button {
-            &_icon {
+        &_container {
+          @include flex(column);
+          width: 50%;
+          gap: 20px;
+          padding: 40px;
+          border-radius: 10px;
+          border: 1px solid var(--tertiary);
+          background-color: var(--tertiary);
+          @media (max-width: 575.98px) {
+            width: 100%;
+          }
+          &_map {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            column-gap: 30px;
+            row-gap: 30px;
+            &_icons {
               width: 76px;
               height: 76px;
               border-radius: 15px;
               padding: 10px;
-              fill: black;
-              background: linear-gradient(
-                225deg,
-                #99daff 0.14%,
-                #a966ff 99.86%
-              );
+              background-color: grey;
+              @media (max-width: 575.98px) {
+                width: 52px;
+                height: 52px;
+              }
             }
           }
-        }
-        .code {
-          height: 300px;
-          width: 350px;
-          filter: blur(2px);
-          bottom: 60px;
-          left: 60px;
-        }
-        .brancard {
-          height: 350px;
-          width: 400px;
-          filter: blur(3px);
-          z-index: -1;
-          top: 70px;
-          right: 100px;
-          opacity: 0.7;
-        }
-        .commerce {
-          height: 350px;
-          width: 400px;
-          filter: blur(4px);
-          z-index: -2;
-          left: 30px;
-          top: 0;
-          opacity: 0.5;
-        }
-        .study {
-          height: 350px;
-          width: 400px;
-          filter: blur(5px);
-          z-index: -3;
-          right: 50px;
-          bottom: 0;
-          opacity: 0.7;
         }
       }
     }

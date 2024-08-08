@@ -1,17 +1,12 @@
 import './course.scss'
-import brancard from '../../assets/brancard.jpg'
-import code from '../../assets/code.png'
-import study from '../../assets/study.jpg'
-import commerce from '../../assets/commerce3.jpg'
+import tech from '../../features/tech/tech'
 import { ReactComponent as Degree } from '../../assets/degree2.svg'
-import { ReactComponent as Cv } from '../../assets/cvdefou.svg'
-import myFile from '../../assets/cvdefou.svg'
 
 const Course = () => {
   return (
-    <section className="course padding" id="content">
+    <section className="course padding" id="course">
       <div className="course_container margin">
-        <h2 className="title">My course</h2>
+        <h2 className="underline">MY COURSE</h2>
         <div className="wrapper">
           <div className="wrapper_course">
             <div className="infos">
@@ -33,24 +28,18 @@ const Course = () => {
               <Degree className="icon" />
             </div>
           </div>
-          <div className="wrapper_img">
-            <div className="cv img">
-              <h5>Download my CV</h5>
-              <a href={myFile} download="myFile.svg" className="cv_button">
-                <Cv className="cv_button_icon" />
-              </a>
-            </div>
-            <div className="code img">
-              <img src={code} alt='code'/>
-            </div>
-            <div className="brancard img">
-              <img src={brancard} alt='brancardiers' />
-            </div>
-            <div className="commerce img">
-              <img src={commerce} alt='commerce international'/>
-            </div>
-            <div className="study img">
-              <img src={study} alt='étude'/>
+          <div className="line"></div>
+          <div className="skills">
+            <h3 className="skills_title">Technical Skills</h3>
+            <div className="skills_container">
+              <div className="skills_container_map">
+                {tech.map((item, index) => (
+                  <item.icon
+                    key={index}
+                    className="skills_container_map_icons"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>

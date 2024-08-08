@@ -5,16 +5,15 @@ const Projects = () => {
   return (
     <section className="projects padding" id="projects">
       <div className="projects_wrapper margin">
-        <h2 className="title">MY PROJECTS</h2>
+        <h2 className="underline">MY PROJECTS</h2>
         <div className="wrapper">
           {content.map((item, index) => (
             <div className="card" key={index}>
-              <h3>{item.title}</h3>
               <div className="card_img">
                 <div className="img">
                   <img src={item.img} alt={item.title} />
                 </div>
-                <div className="ntm">
+                <div className="container">
                   <div className="card_img_technologies">
                     {item.technologies.map((TechIcon, idx) => (
                       <TechIcon key={idx} className="icon" />

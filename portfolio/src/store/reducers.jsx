@@ -4,15 +4,11 @@ export const switchSlice = createSlice({
   name: 'switch',
   initialState: {
     mode: 'normal',
-    language: false,
   },
   reducers: {
     setToggle(state, action) {
       if (action.payload.mode !== undefined) {
         state.mode = action.payload.mode
-      }
-      if (action.payload.language !== undefined) {
-        state.language = action.payload.language
       }
     },
   },

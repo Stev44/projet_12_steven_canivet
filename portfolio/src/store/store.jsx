@@ -9,8 +9,9 @@ const reducer = combineReducers({
 })
 
 const persistConfig = {
-    key: 'root',
-    storage,
+  key: 'config',
+  storage,
+  whitelist: ['switch'],
 }
 
 const persistedReducer = persistReducer(persistConfig, reducer)

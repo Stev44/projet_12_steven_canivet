@@ -2,18 +2,16 @@ import './hero.scss'
 import Socials from '../socials/socials'
 import { ReactComponent as Arrow } from '../../assets/arrow.svg'
 import ParticlesComponent from '../Particles/particles'
+import profile from '../../assets/profil.jpg'
 
 const Hero = () => {
   const scrollToProjects = () => {
     const element = document.getElementById('projects')
-    const yOffset = -60
-    const yPosition =
-      element.getBoundingClientRect().top + window.scrollY + yOffset
+    const offSet = 60
+    const getPosition = element.getBoundingClientRect().top
+    const setOffSet = getPosition + window.scrollY - offSet
 
-    window.scrollTo({
-      top: yPosition,
-      behavior: 'smooth',
-    })
+    window.scrollTo({ top: setOffSet, behavior: 'smooth' })
   }
   return (
     <section className="hero" id="hero">
@@ -23,16 +21,17 @@ const Hero = () => {
           <div className="wrapper">
             <p className="wrapper_welcome">Hey there ! Im,</p>
             <h1 className="wrapper_title">Steven</h1>
+            <p className="wrapper_job">
+              <strong>Front-end junior developer.</strong>
+            </p>
             <p className="wrapper_description">
-              <strong>Front-end developer.</strong>
-              <br />
               Passionate by creating and designs
             </p>
             <Socials />
             <button className="wrapper_button">Contact me</button>
           </div>
           <div className="profile">
-            <div className="profile_img"></div>
+            <img src={profile} alt="Steven Canivet" className="profile_img" />
           </div>
         </div>
         <button className="button" onClick={scrollToProjects}>
