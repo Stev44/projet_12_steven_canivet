@@ -18,7 +18,7 @@ body {
 
 .margin {
   width: calc(100% - 400px);
-  @media (min-width: 0px) and (max-width: 1000px) {
+  @media (min-width: 0px) and (max-width: 850px) {
     width: calc(100% - 40px);
   }
   @media (min-width: 1440px) and (max-width: 1660px) {
@@ -27,7 +27,7 @@ body {
   @media (min-width: 1250px) and (max-width: 1439px) {
     width: calc(100% - 200px);
   }
-  @media (min-width: 1000px) and (max-width: 1249px) {
+  @media (min-width: 850px) and (max-width: 1249px) {
     width: calc(100% - 100px);
   }
 }
@@ -106,4 +106,6 @@ small {
 
 button {
   cursor: pointer;
+  font-size: 1.2rem;
+  color: black;
 }

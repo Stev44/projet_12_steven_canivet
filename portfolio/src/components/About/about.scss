@@ -37,7 +37,7 @@
   }
   &_wrapper {
     @include flex(column-reverse);
-    width: 70%;
+    width: 60%;
     gap: 60px;
     @media (max-width: 575.98px) {
       @include flex(column);

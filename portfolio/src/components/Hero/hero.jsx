@@ -3,16 +3,9 @@ import Socials from '../socials/socials'
 import { ReactComponent as Arrow } from '../../assets/arrow.svg'
 import ParticlesComponent from '../Particles/particles'
 import profile from '../../assets/profil.jpg'
+import { scrollToSection } from '../../features/function'
 
 const Hero = () => {
-  const scrollToProjects = () => {
-    const element = document.getElementById('projects')
-    const offSet = 60
-    const getPosition = element.getBoundingClientRect().top
-    const setOffSet = getPosition + window.scrollY - offSet
-
-    window.scrollTo({ top: setOffSet, behavior: 'smooth' })
-  }
   return (
     <section className="hero" id="hero">
       <ParticlesComponent />
@@ -28,13 +21,18 @@ const Hero = () => {
               Passionate by creating and designs
             </p>
             <Socials />
-            <button className="wrapper_button">Contact me</button>
+            <button
+              className="wrapper_button"
+              onClick={() => scrollToSection('contact')}
+            >
+              Contact me
+            </button>
           </div>
           <div className="profile">
             <img src={profile} alt="Steven Canivet" className="profile_img" />
           </div>
         </div>
-        <button className="button" onClick={scrollToProjects}>
+        <button className="button" onClick={() => scrollToSection('projects')}>
           <Arrow className="button_arrow" />
         </button>
       </div>

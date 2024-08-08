@@ -5,12 +5,14 @@ import { setToggle } from '../../store/reducers'
 import { ReactComponent as Paint } from '../../assets/paint.svg'
 import { ReactComponent as ArrowUp } from '../../assets/arrowUp.svg'
 import React, { useEffect, useState } from 'react'
+import { scrollToSection } from '../../features/function'
 
 const Header = React.memo(() => {
   const dispatch = useDispatch()
-  const modes = ['normal', 'green', 'purple', 'yellow', 'blue']
   const colorMode = useSelector((state) => state.switch.mode)
   const [visible, setVisible] = useState(false)
+
+  const modes = ['normal', 'green', 'purple', 'yellow', 'blue']
 
   /* Permet d'afficher le bouton a 200px de scroll en dessous la section Hero et permet aussi d'attribuer le new mode de couleur au body a chaque changement de couleur */
   useEffect(() => {
@@ -33,31 +35,15 @@ const Header = React.memo(() => {
     }
   }, [colorMode])
 
-  /* Permet de faire un scroll vers une ancre */
-
-  const scrollToHeader = () => {
-    document.getElementById('header').scrollIntoView({ behavior: 'smooth' })
-  }
-
   const setMode = (mode) => {
     document.querySelector('body').setAttribute('data-theme', mode)
   }
-
   /* Permet de verifier l'index du mode de couleur en cours et de passer au suivant au click */
   const handleClick = () => {
     const modeIndex = (modes.indexOf(colorMode) + 1) % modes.length
     const newMode = modes[modeIndex]
     dispatch(setToggle({ mode: newMode }))
     setMode(newMode)
-  }
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id)
-    const offSet = 60
-    const getPosition = element.getBoundingClientRect().top
-    const setOffSet = getPosition + window.scrollY - offSet
-
-    window.scrollTo({ top: setOffSet, behavior: 'smooth' })
   }
 
   return (
@@ -78,7 +64,7 @@ const Header = React.memo(() => {
           </button>
         </div>
         <button
-          onClick={scrollToHeader}
+          onClick={() => scrollToSection('header')}
           className={`back ${visible ? 'visible' : ''}`}
         >
           <ArrowUp className="arrow" />

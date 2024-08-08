@@ -30,7 +30,6 @@ const Course = () => {
           </div>
           <div className="line"></div>
           <div className="skills">
-            <h3 className="skills_title">Technical Skills</h3>
             <div className="skills_container">
               <div className="skills_container_map">
                 {tech.map((item, index) => (
