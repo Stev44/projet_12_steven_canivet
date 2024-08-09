@@ -3,6 +3,7 @@ import Projects from '../../components/Projects/projects'
 import About from '../../components/About/about'
 import Course from '../../components/Course/course'
 import Contact from '../../components/Contact/contact'
+import Thanks from '../../components/Thanks/thanks'
 import './home.scss'
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <About />
       <Course />
       <Contact />
+      <Thanks />
     </main>
   )
 }

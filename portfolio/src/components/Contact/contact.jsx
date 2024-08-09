@@ -4,7 +4,7 @@ import { ReactComponent as Phone } from '../../assets/phone.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
