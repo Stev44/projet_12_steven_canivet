@@ -7,56 +7,56 @@ import { ReactComponent as MongoDB } from '../../assets/mongoDB.svg'
 import { ReactComponent as Figma } from '../../assets/figma.svg'
 import { ReactComponent as Css } from '../../assets/css.svg'
 
-import project from '../../assets/project.jpg'
-import test from '../../assets/argentBank.jpg'
+import project from '../../assets/724.png'
+import test from '../../assets/argentbank2.jpeg'
 import portfolio from '../../assets/portfolio.jpg'
-import land from '../../assets/kasa.jpg'
-import landi from '../../assets/sophie.jpg'
-import landing from '../../assets/omf.jpg'
+import land from '../../assets/kasa2.jpg'
+import landi from '../../assets/sophie0.png'
+import landing from '../../assets/nina2.jpg'
 
 const content = [
   {
     title: 'Portfolio',
     img: portfolio,
-    description:
-      'Projet realisé avec dqjdiqdi qdiqdiqjd iqjdiqj diqjdijdijs qdqdqidqid qdqjdiqjdqqidq qdqseffffffffff fffffff ffffffffffff ffffffffff fffff fffff ffffffff ffff fffffff sfffffff fffff fff ffffffffe',
+    description: `Projet de fin d'étude réalisé "from scratch", en react et react redux.`,
     technologies: [ReactIcon, Redux, Sass, Figma],
+    link: 'https://github.com/Stev44/projet_12_steven_canivet',
   },
   {
     title: 'Argent Bank',
     img: test,
-    description:
-      'Projet realisé avec dqjdiqdiqdiqdiqjdiqjdiqjdiqjdijdijs qdqdqidqid qdqjdiqjdqqidq qdq',
+    description: `Réalisation d'un système d'authentification et des routes API pour les transactions.`,
     technologies: [ReactIcon, Redux, MongoDB, Css],
+    link: 'https://github.com/Stev44/projet_11_steven_canivet',
   },
   {
     title: 'Kasa',
     img: land,
-    description:
-      'Projet realisé avec dqjdiqdiqdiqdiqjdiqjdiqjdiqjdijdijs qdqdqidqid qdqjdiqjdqqidq qdq',
+    description: `Réalisation d'un site de location immobilière.`,
     technologies: [ReactIcon, Sass],
+    link: 'https://github.com/Stev44/projet_8_steven_canivet',
   },
 
   {
     title: 'Sophie Bluel',
     img: landi,
-    description:
-      'Projet realisé avec dqjdiqdiqdiqdiqjdiqjdiqjdiqjdijdijs qdqdqidqid qdqjdiqjdqqidq qdq',
+    description: `Réalisation d'un système d'authentification et une page administrateur dédiée.`,
     technologies: [Js, Css],
+    link: 'https://github.com/Stev44/projet_6_steven_canivet',
   },
   {
-    title: 'Oh my food',
+    title: 'Nina Carducci',
     img: landing,
-    description:
-      'Projet realisé avec dqjdiqdiqdiqdiqjdiqjdiqjdiqjdijdijs qdqdqidqid qdqjdiqjdqqidq qdq',
+    description: `Amélioration du référencement naturel (SEO) d'un site de photographe.`,
     technologies: [Html, Css],
+    link: 'https://github.com/Stev44/projet_9_steven_canivet',
   },
   {
-    title: 'Projet 1',
+    title: '724 events',
     img: project,
-    description:
-      'Projet realisé avec dqjdiqdiqdiqdiqjdiqjdiqjdiqjdijdijs qdqdqidqid qdqjdiqjdqqidq qdq',
-    technologies: [ReactIcon, Redux],
+    description: `Analyse et débogage d'un site d'évènementiel.`,
+    technologies: [ReactIcon],
+    link: 'https://github.com/Stev44/projet_10_steven_canivet',
   },
 ]
 export default content

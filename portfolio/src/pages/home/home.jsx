@@ -5,12 +5,15 @@ import Course from '../../components/Course/course'
 import Contact from '../../components/Contact/contact'
 import Thanks from '../../components/Thanks/thanks'
 import './home.scss'
+import content from '../../features/contentProject/contentProject'
+
+const OPTIONS = { loop: true }
 
 const Home = () => {
   return (
     <main>
       <Hero />
-      <Projects />
+      <Projects content={content} options={OPTIONS} />
       <About />
       <Course />
       <Contact />

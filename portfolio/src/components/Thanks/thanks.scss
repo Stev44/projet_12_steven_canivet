@@ -1,8 +1,7 @@
 @import '../../style/main.scss';
 
 .thanks {
-  border-top: 3px solid var(--tertiary);
-
+  padding: 0 0 150px 0;
   &_wrapper {
     @include flex(column);
     text-align: center;

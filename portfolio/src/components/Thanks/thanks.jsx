@@ -2,7 +2,7 @@ import './thanks.scss'
 
 const Thanks = () => {
   return (
-    <section className="thanks padding">
+    <section className="thanks">
       <div className="thanks_wrapper margin">
         <h3 className="thanks_wrapper_title">MERCI POUR VOTRE ATTENTION</h3>
         <p className="thanks_wrapper_text">
