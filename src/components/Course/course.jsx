@@ -10,20 +10,20 @@ const Course = () => {
         <div className="wrapper">
           <div className="wrapper_course">
             <div className="infos">
-              <h4>Formation développeur web</h4>
-              <h5>Open Classrooms</h5>
+              <h3>Formation développeur web</h3>
+              <h4>Open Classrooms</h4>
               <p>2023-2024</p>
               <Degree className="icon" />
             </div>
             <div className="infos">
-              <h4>BTS Commerce International</h4>
-              <h5>Lycée Nelson Mandela</h5>
+              <h3>BTS Commerce International</h3>
+              <h4>Lycée Nelson Mandela</h4>
               <p>2018-2020</p>
               <Degree className="icon" />
             </div>
             <div className="infos">
-              <h4>Baccalaureat STMG</h4>
-              <h5>Lycée La Herdrie</h5>
+              <h3>Baccalaureat STMG</h3>
+              <h4>Lycée La Herdrie</h4>
               <p>2015-2018</p>
               <Degree className="icon" />
             </div>

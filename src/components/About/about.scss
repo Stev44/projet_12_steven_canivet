@@ -88,7 +88,6 @@
     &_text {
       line-height: 1.7;
       @include flex(column, center, flex-start);
-      text-align: justify;
       gap: 20px;
     }
   }

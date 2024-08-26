@@ -27,6 +27,7 @@
       .map {
         @include flex(column-reverse);
         gap: 25px;
+        width: 100%;
         h3 {
           font-size: 1.2rem;
           @media (max-width: 575.98px) {

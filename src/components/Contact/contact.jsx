@@ -82,11 +82,14 @@ const Contact = () => {
           <div className="wrapper">
             <div className="wrapper_container">
               <div className="wrapper_container_inputs">
-                <label className="label"></label>
+                <label className="sr-only" for="name">
+                  Name
+                </label>
                 <input
                   className="input"
                   type="text"
                   name="name"
+                  id="name"
                   placeholder="Name"
                   value={formState.name}
                   onChange={handleChange}
@@ -94,11 +97,14 @@ const Contact = () => {
                 />
               </div>
               <div className="wrapper_container_inputs">
-                <label className="label"></label>
+                <label className="sr-only" for="firstName">
+                  Firstname
+                </label>
                 <input
                   className="input"
                   type="text"
                   name="firstName"
+                  id="firstName"
                   placeholder="Firstname"
                   value={formState.firstName}
                   onChange={handleChange}
@@ -106,11 +112,14 @@ const Contact = () => {
                 />
               </div>
               <div className="wrapper_container_inputs">
-                <label className="label"></label>
+                <label className="sr-only" for="subject">
+                  Subject
+                </label>
                 <input
                   className="input"
                   type="text"
                   name="subject"
+                  id="subject"
                   placeholder="Subject"
                   value={formState.subject}
                   onChange={handleChange}
@@ -118,11 +127,14 @@ const Contact = () => {
                 />
               </div>
               <div className="wrapper_container_inputs">
-                <label className="label"></label>
+                <label className="sr-only" for="email">
+                  Email
+                </label>
                 <input
                   className="input"
                   type="email"
                   name="email"
+                  id="email"
                   placeholder="Email"
                   value={formState.email}
                   onChange={handleChange}
@@ -131,10 +143,13 @@ const Contact = () => {
               </div>
             </div>
             <div className="wrapper_message">
-              <label className="label"></label>
+              <label className="sr-only" for="message">
+                Message
+              </label>
               <textarea
                 className="textarea"
                 name="message"
+                id="message"
                 value={formState.message}
                 onChange={handleChange}
                 required
@@ -142,6 +157,7 @@ const Contact = () => {
             </div>
           </div>
           <button className="button" type="submit">
+            <span class="sr-only">Contact button</span>
             <FontAwesomeIcon icon={faPaperPlane} className="button_icon" />
           </button>
         </form>
